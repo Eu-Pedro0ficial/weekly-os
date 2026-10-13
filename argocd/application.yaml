@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: weekly-os-automation
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/Eu-Pedro0ficial/weekly-os.git
+    targetRevision: main
+    path: k8s/overlays/k3s
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: automation
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+      - ApplyOutOfSyncOnly=true
