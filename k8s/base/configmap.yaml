@@ -22,3 +22,5 @@ data:
 
   N8N_WEBHOOK_URL: "http://100.107.220.40/"
   N8N_PROXY_HOPS: "1"
+
+  N8N_SECURE_COOKIE: "false"
