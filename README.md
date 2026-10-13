@@ -137,9 +137,11 @@ These assets must be backed up independently.
 ## Roadmap
 
 - [x] M0 — n8n platform bootstrap
-- [ ] M0.1 — Ingress / HTTPS
-- [ ] M0.2 — ArgoCD Application
-- [ ] M0.3 — Automated off-host backups
+- [x] M0.1 — Git repository and reproducible bootstrap
+- [x] M0.2 — ArgoCD GitOps reconciliation
+- [ ] M0.3 — Ingress / HTTPS
+- [ ] M0.4 — Automated off-host backups
+- [ ] M0.5 — Restore validation
 - [ ] M1 — Notion → Google Calendar synchronization
 - [ ] M2 — Execution metrics
 - [ ] M3 — Weekly Review automation
