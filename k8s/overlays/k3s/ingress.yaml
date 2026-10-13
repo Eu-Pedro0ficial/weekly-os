@@ -10,8 +10,7 @@ spec:
   ingressClassName: traefik
 
   rules:
-    - host: n8n.weekly-os.internal
-      http:
+    - http:
         paths:
           - path: /
             pathType: Prefix
