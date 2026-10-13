@@ -3,6 +3,11 @@ kind: Kustomization
 
 resources:
   - namespace.yaml
-  - configmap.yaml
   - postgres.yaml
   - n8n.yaml
+
+configMapGenerator:
+  - name: n8n-config
+    namespace: automation
+    envs:
+      - config/n8n.env
